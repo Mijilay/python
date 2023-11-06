@@ -41,6 +41,5 @@ if __name__ == '__main__':
             print(count_clicks(authorization_header, parsed_link))
         else:
             print('Битлинк', shorten_link(authorization_header, args.url))
-
     except requests.exceptions.HTTPError:
         print("Неверный формат ссылки")
